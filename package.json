@@ -16,7 +16,7 @@
     "feathers": "^2.0.3",
     "feathers-configuration": "^0.3.3",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.2.1",
+    "nuxt-buefy": "^0.2.3",
     "nuxt-feathers-vuex": "0.0.7"
   },
   "devDependencies": {
