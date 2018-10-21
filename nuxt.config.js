@@ -50,6 +50,7 @@ module.exports = {
             'nuxt-feathers-vuex',
             {
                 url: 'http://localhost:3000',
+                id: '_id',
             }
         ],
     ],
