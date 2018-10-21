@@ -1,25 +1,105 @@
 {
   "name": "feathers-playground",
-  "version": "1.0.0",
-  "description": "Playground for nuxt-feathers-vuex",
-  "author": "Jørgen Vatle",
+  "description": "feathers nuxt fullstack",
+  "repository": {
+    "url": "JorgenVatle/feathers-playground",
+    "type": "git"
+  },
+  "author": "JorgenVatle <Jorgen@WcAServices.net>",
   "private": true,
+  "version": "0.0.0",
+  "main": "./dist/server/main.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate"
+    "migrate": "npx f3 migrate",
+    "seed": "npx f3 seed",
+    "dev": "cross-env NODE_ENV=development && npx f3 dev",
+    "build": "npx f3 build",
+    "build:server": "npx f3 build-server",
+    "build:client": "npx f3 build-client",
+    "start": "cross-env NODE_ENV=production node ./dist/server/main.js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
-    "cross-env": "^5.2.0",
-    "feathers": "^2.0.3",
-    "feathers-configuration": "^0.3.3",
+    "@casl/ability": "^2.3.0",
+    "@casl/vue": "^0.4.3",
+    "@feathers-nuxt/cli": "^1.0.2",
+    "@feathers-nuxt/feathers-notifme": "^1.0.1-beta.1",
+    "@feathersjs/authentication": "^2.1.7",
+    "@feathersjs/authentication-client": "^1.0.2",
+    "@feathersjs/authentication-jwt": "^2.0.0",
+    "@feathersjs/authentication-local": "^1.2.1",
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.0",
+    "@feathersjs/express": "^1.2.2",
+    "@feathersjs/feathers": "^3.1.5",
+    "@feathersjs/rest-client": "^1.3.4",
+    "@feathersjs/socketio": "^3.2.1",
+    "@feathersjs/socketio-client": "^1.1.0",
+    "@nuxtjs/component-cache": "^1.1.2",
+    "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/sitemap": "^0.1.1",
+    "axios": "^0.18.0",
+    "compression": "^1.7.2",
+    "content-addressable-blob-store": "^4.6.0",
+    "cookie-parser": "^1.4.3",
+    "cookie-storage": "^3.1.0",
+    "cors": "^2.8.4",
+    "cross-env": "^5.1.5",
+    "dauria": "^2.0.0",
+    "debug": "^3.1.0",
+    "feathers-authentication-hooks": "^0.2.0",
+    "feathers-authentication-management": "^2.0.0",
+    "feathers-blob": "^2.0.0",
+    "feathers-hooks-common": "^4.11.1",    
+    "feathers-hooks-rediscache": "^1.1.3", 
+    "feathers-hooks-validator": "github:kharhys/feathers-hooks-validator",
+    "feathers-logger": "^0.3.0",
+    
+    
+    "feathers-profiler": "^0.1.5",
+    
+    "feathers-swagger": "^0.7.2",
+    "feathers-vuex": "^1.4.2",
+    "form-data": "^2.3.2",
+    "fuzzysort": "^1.1.1",
+    "global": "^4.3.2",
+    "helmet": "^3.12.0",
+    "heml": "^1.1.3",
+    "iview": "^3.1.0",
+    "iview-loader": "^1.2.2",
+    "jwt-decode": "^2.2.0",
+    "livescript": "github:gkz/LiveScript",
+    "localstorage-memory": "^1.0.2",
+    "lodash": "^4.17.10",
+    "multer": "^1.3.0",
+    
+        
+        
+    "node-resque": "^5.3.0", 
+    "notifme-sdk": "^1.6.1",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.2.3",
-    "nuxt-feathers-vuex": "0.0.7"
+    "pug": "^2.0.3",
+    
+    
+    
+    "serialize-error": "^2.1.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io-client": "^2.1.0",    
+    
+    "storyboard": "^3.1.1",
+    "storyboard-listener-browser-extension": "^3.1.1",
+    "storyboard-listener-console": "^3.1.1",
+    "storyboard-listener-ws-client": "^3.1.1",
+    "storyboard-listener-ws-server": "^3.1.1",
+    
+    "uberproto": "^1.2.0",
+    "vue": "^2.5.16",
+    "vue-async-computed": "^3.4.1",
+    "vue-media-query-mixin": "^0.1.0",
+    "vue-scrollto": "^2.11.0",
+    "vuebar": "0.0.18",
+    "vuex-router-sync": "^5.0.0",
+    "winston": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
   }
 }
