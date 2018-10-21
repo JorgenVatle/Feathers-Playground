@@ -46,7 +46,12 @@ module.exports = {
     modules: [
         '@nuxtjs/axios',
         'nuxt-buefy',
-        'nuxt-feathers-vuex',
+        [
+            'nuxt-feathers-vuex',
+            {
+                url: 'http://localhost:3000',
+            }
+        ],
     ],
     /*
     ** Axios module configuration
