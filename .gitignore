@@ -79,3 +79,6 @@ dist
 
 # IDE
 .idea
+
+# Generated feathers.js plugin (https://github.com/gustojs/nuxt-feathers-vuex)
+plugins/feathers.js
