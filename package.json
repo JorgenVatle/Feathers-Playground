@@ -11,12 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
     "feathers": "^2.0.3",
     "feathers-configuration": "^0.3.3",
+    "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.2.1",
-    "@nuxtjs/axios": "^5.0.0"
+    "nuxt-feathers-vuex": "0.0.7"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
