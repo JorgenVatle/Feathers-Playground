@@ -28,6 +28,13 @@ module.exports = {
     */
     css: [],
 
+    /**
+     * Global middleware
+     */
+    middleware: [
+        'middleware/feathers.js',
+    ],
+
     /*
     ** Plugins to load before mounting the App
     */
